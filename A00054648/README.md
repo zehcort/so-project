@@ -42,9 +42,24 @@ El siguiente proyecto consiste en el despliegue de una aplicación web para obte
 
 Como se solicita, en el siguiente informe se explicará y demostrará el montaje y funcionamiento de un servicio web que muestra la información del sistema, corrido sobre una máquina con sistema operativo Ubuntu Server.
 
-El primer paso para comenzar con la actividad es la instalación y configuración del servidor Ubuntu. Para ello ajustamos el adaptador de red para funcionar como puente.
+**1. Instalación ubuntu server uy configuración de interfaces de red**
+
+El primer paso para comenzar con la actividad es la instalación y configuración del servidor Ubuntu. Para ello creamos una maquina virtual e instalamos ubunto 16.04, como se evidencia en el ancabezado de la imagen a continuación. Luego, ajustamos los adaptadores de red en modo puente; lo hicimos antes de terminar la instalación de la maquina por lo que se crearon los archivos de configuración y solo fue necesario cambiar la siguiente linea:
+    
+     ONBOOT=yes
+
 
 ![][0]
+
+
+**2. Configuración de puertos**
+
+El siguiente paso que se realizó consiste en habilitar los puertos para que se puedan hacer solicitudes a los servicios correctamente. Se habilitó el puerto 8080, ya que va a ser el puerto por e cual se va a configurar el servicio. Para lograrlo se ejecutaron los siguientes comandos:
+
+    firewall-cmd --zone=public --add-port=8080/tcp --permanent
+    firewall-cmd --reload
+
+**3. Instalación de dependencias**
 
 A continuación, se procedió a instalar, configurar e iniciar el servidor SSH. Todo esto con el objetivo de poder conectarse de manera remota y trabajar con mayor facilidad desde un cliente SSH como PUTTY.
 
@@ -70,6 +85,9 @@ Después, se procedió a instalar el creador de entornos virtuales, con ayuda de
 ![][7]
 
 
+
+**4. Creación de ambiente virtual**
+
 Una vez instaladas estas librerías, se procedió a crear el ambiente virtual para la ejecución del proyecto, llamado elAmbiente. Seguido de esto, se activó.
 
 ![][8]
@@ -79,6 +97,10 @@ Una vez instaladas estas librerías, se procedió a crear el ambiente virtual pa
 Ya situados dentro del ambiente virtual creado, se instaló Flask dentro de él.
 
 ![][10]
+
+
+
+**5. Aplicación en python**
 
 Una vez terminados los pasos anteriores, ya está todo preparado para montar el servicio web solicitado en la actividad. Para tal fin, se crea un archivo .py que contiene el programa que se correrá para desplegar el servicio. En el se describen las direcciones donde se situará cada parte de la información del sistema. Este servicio se compone de una página de Bienvenida, acompañada de otras donde se mostrará la información de la CPU, el uso de la memoria, uso del disco y la información de la red. 
 
