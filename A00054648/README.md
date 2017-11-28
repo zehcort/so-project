@@ -5,8 +5,8 @@
 **Docente:** Daniel Barragán C.  
 **Tema:**  Servicios web  
 
-**Nombre del estudiante:** Luis Alejandro Tróchez  
-**Código:** A00054648
+**Nombre del estudiante:** Luis Alejandro Tróchez / Diego Lamus
+**Código:** A00054648 / 
 **Enlace repositorio:** https://github.com/zehcort/so-project
 
 ## Objetivos
@@ -40,19 +40,92 @@ El siguiente proyecto consiste en el despliegue de una aplicación web para obte
   
 ## Desarrollo 
 
-## 3.
+Como se solicita, en el siguiente informe se explicará y demostrará el montaje y funcionamiento de un servicio web que muestra la información del sistema, corrido sobre una máquina con sistema operativo Ubuntu Server.
 
+El primer paso para comenzar con la actividad es la instalación y configuración del servidor Ubuntu. Para ello ajustamos el adaptador de red para funcionar como puente.
 
-En primer lugar, se ajusta el número de núcleos de la CPU que se usarán en la máquina virtual.
+![][0]
 
+A continuación, se procedió a instalar, configurar e iniciar el servidor SSH. Todo esto con el objetivo de poder conectarse de manera remota y trabajar con mayor facilidad desde un cliente SSH como PUTTY.
 
 ![][1]
 
+![][2]
+
+Una vez realizado lo anterior, se  revisó la dirección IP de la máquina y se procedió a establecer conexión desde PUTTY.
+
+![][3]
+
+![][4]
+
+Posterior a esto, se comenzó a realizar la instalación de las librerías y aplicativos necesarios para montar el servicio web. 
+En primer lugar, se instaló el instalador en lenguage python y se hizo un update a las librerías instaladas.
+
+![][5]
+
+![][6]
+
+Después, se procedió a instalar el creador de entornos virtuales, con ayuda del instalador de python. Se hizo la actualización de versión que recomendó.
+
+![][7]
 
 
-• CPUQuota: Asigna un porcentaje de tiempo de CPU (denotado con el signo %) a un proceso dado que será ejecutado, indicando el máximo de tiempo que el proceso puede hacer uso de la CPU, relativo al tiempo total. Esta acción controla el atributo cpu.max
+Una vez instaladas estas librerías, se procedió a crear el ambiente virtual para la ejecución del proyecto, llamado elAmbiente. Seguido de esto, se activó.
+
+![][8]
+
+![][9]
+
+Ya situados dentro del ambiente virtual creado, se instaló Flask dentro de él.
+
+![][10]
+
+Una vez terminados los pasos anteriores, ya está todo preparado para montar el servicio web solicitado en la actividad. Para tal fin, se crea un archivo .py que contiene el programa que se correrá para desplegar el servicio. En el se describen las direcciones donde se situará cada parte de la información del sistema. Este servicio se compone de una página de Bienvenida, acompañada de otras donde se mostrará la información de la CPU, el uso de la memoria, uso del disco y la información de la red. 
+
+![][11]
+
+![][12]
+
+Una vez listo esto, ya podemos correr el servicio. En su ejecución se desplegarán todas las consultas HTTP que se realicen al servidor y la respuesta del mismo.
+
+![][13]
+
+Por último, se enseña el resultado de las consultas HTTP en el servicio WEB. Todo esto se realizó desde otra Máquina CentOS con el comando curl.
+
+![][14]
+
+![][15]
+
+![][16]
+
+![][17]
+
+
+## Referencias
+* https://askubuntu.com/questions/294946/how-to-change-root-password-in-ubuntu
+* https://www.redeszone.net/gnu-linux/servidor-ssh-en-ubuntu/
 
 
 
 
+
+[0]: 0.PNG
 [1]: 1.PNG
+[2]: 2.PNG
+[3]: 3.PNG
+[4]: 4.PNG
+[5]: 5.PNG
+[6]: 6.PNG
+[7]: 7.PNG
+[8]: 8.PNG
+[9]: 9.PNG
+[10]: 10.PNG
+[11]: 11.PNG
+[12]: 12.PNG
+[13]: 13.PNG
+[14]: 14.PNG
+[15]: 15.PNG
+[16]: 16.PNG
+[17]: 17.PNG
+
+
