@@ -104,24 +104,21 @@ Ya situados dentro del ambiente virtual creado, se instaló Flask dentro de él.
 
 Una vez terminados los pasos anteriores, ya está todo preparado para montar el servicio web solicitado en la actividad. Para tal fin, se crea un archivo .py que contiene el programa que se correrá para desplegar el servicio. En el se describen las direcciones donde se situará cada parte de la información del sistema. Este servicio se compone de una página de Bienvenida, acompañada de otras donde se mostrará la información de la CPU, el uso de la memoria, uso del disco y la información de la red. El codigo del archivo .py es el siguiente: 
 
-![]()
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/codigo.png)
 
-![][11]
-
-![][12]
 
 Una vez listo esto, ya podemos correr el servicio. En su ejecución se desplegarán todas las consultas HTTP que se realicen al servidor y la respuesta del mismo. Las consultas que se realizaron se pueden evidenciar en la siguiente imagen
 
-![]()
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/Consultas.png)
 
-![][13]
 
 Por último, se enseña el resultado de las consultas HTTP en el servicio WEB. Las consultas se hicieron por medio del aplicativo curl, en una sesion diferente de las terminal, por fuera del virtualenv que se creó. Las respuestas a las consultas fueron las siguientes:
 
-![]()
-![]()
-![]()
-![]()
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/bienvenido.png)
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/usoCpu.png)
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/disco.png)
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/memoria.png)
+![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/netstat.png)
 
 ![][14]
 
@@ -151,9 +148,6 @@ Por último, se enseña el resultado de las consultas HTTP en el servicio WEB. L
 [8]: 8.PNG
 [9]: 9.PNG
 [10]: 10.PNG
-[11]: 11.PNG
-[12]: 12.PNG
-[13]: 13.PNG
 [14]: 14.PNG
 [15]: 15.PNG
 [16]: 16.PNG
