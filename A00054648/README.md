@@ -5,8 +5,8 @@
 **Docente:** Daniel Barragán C.  
 **Tema:**  Servicios web  
 
-**Nombre del estudiante:** Luis Alejandro Tróchez / Diego Lamus
-**Código:** A00054648 / 
+**Nombre del estudiante:** Luis Alejandro Tróchez / Diego Lamus  
+**Código:** A00054648 / A00320776  
 **Enlace repositorio:** https://github.com/zehcort/so-project
 
 ## Objetivos
