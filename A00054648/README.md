@@ -102,17 +102,26 @@ Ya situados dentro del ambiente virtual creado, se instaló Flask dentro de él.
 
 **5. Aplicación en python**
 
-Una vez terminados los pasos anteriores, ya está todo preparado para montar el servicio web solicitado en la actividad. Para tal fin, se crea un archivo .py que contiene el programa que se correrá para desplegar el servicio. En el se describen las direcciones donde se situará cada parte de la información del sistema. Este servicio se compone de una página de Bienvenida, acompañada de otras donde se mostrará la información de la CPU, el uso de la memoria, uso del disco y la información de la red. 
+Una vez terminados los pasos anteriores, ya está todo preparado para montar el servicio web solicitado en la actividad. Para tal fin, se crea un archivo .py que contiene el programa que se correrá para desplegar el servicio. En el se describen las direcciones donde se situará cada parte de la información del sistema. Este servicio se compone de una página de Bienvenida, acompañada de otras donde se mostrará la información de la CPU, el uso de la memoria, uso del disco y la información de la red. El codigo del archivo .py es el siguiente: 
+
+![]()
 
 ![][11]
 
 ![][12]
 
-Una vez listo esto, ya podemos correr el servicio. En su ejecución se desplegarán todas las consultas HTTP que se realicen al servidor y la respuesta del mismo.
+Una vez listo esto, ya podemos correr el servicio. En su ejecución se desplegarán todas las consultas HTTP que se realicen al servidor y la respuesta del mismo. Las consultas que se realizaron se pueden evidenciar en la siguiente imagen
+
+![]()
 
 ![][13]
 
-Por último, se enseña el resultado de las consultas HTTP en el servicio WEB. Todo esto se realizó desde otra Máquina CentOS con el comando curl.
+Por último, se enseña el resultado de las consultas HTTP en el servicio WEB. Las consultas se hicieron por medio del aplicativo curl, en una sesion diferente de las terminal, por fuera del virtualenv que se creó. Las respuestas a las consultas fueron las siguientes:
+
+![]()
+![]()
+![]()
+![]()
 
 ![][14]
 
