@@ -104,53 +104,53 @@ Ya situados dentro del ambiente virtual creado, se instaló Flask dentro de él.
 
 Una vez terminados los pasos anteriores, ya está todo preparado para montar el servicio web solicitado en la actividad. Para tal fin, se crea un archivo .py que contiene el programa que se correrá para desplegar el servicio. En el se describen las direcciones donde se situará cada parte de la información del sistema. Este servicio se compone de una página de Bienvenida, acompañada de otras donde se mostrará la información de la CPU, el uso de la memoria, uso del disco y la información de la red. El codigo del archivo .py es el siguiente: 
 
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/codigo.png)
+![](imagenes/codigo.png)
 
 
 Una vez listo esto, ya podemos correr el servicio. En su ejecución se desplegarán todas las consultas HTTP que se realicen al servidor y la respuesta del mismo. Las consultas que se realizaron se pueden evidenciar en la siguiente imagen
 
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/Consultas.png)
+![](imagenes/Consultas.png)
 
 
 Por último, se enseña el resultado de las consultas HTTP en el servicio WEB. Las consultas se hicieron por medio del aplicativo curl, en una sesion diferente de las terminal, por fuera del virtualenv que se creó. Las respuestas a las consultas fueron las siguientes:
 
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/bienvenido.png)
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/usoCpu.png)
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/disco.png)
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/memoria.png)
-![](https://github.com/diegolamus/so-project/blob/A00054648/add-solutions/A00054648/imagenes/netstat.png)
+![](imagenes/bienvenido.png)
+![](imagenes/usoCpu.png)
+![](imagenes/disco.png)
+![](imagenes/memoria.png)
+![](imagenes/netstat.png)
+
+Luego tambien se hicieron las consultas a travez de una conexion ssh, desde otra maquina virtual de centos7:
 
 ![][14]
-
 ![][15]
-
 ![][16]
-
 ![][17]
 
 
 ## Referencias
 * https://askubuntu.com/questions/294946/how-to-change-root-password-in-ubuntu
 * https://www.redeszone.net/gnu-linux/servidor-ssh-en-ubuntu/
+* https://stackoverflow.com/questions/19267591/how-to-store-os-system-output-in-a-variable-or-a-list-in-python
 
 
 
 
 
-[0]: 0.PNG
-[1]: 1.PNG
-[2]: 2.PNG
-[3]: 3.PNG
-[4]: 4.PNG
-[5]: 5.PNG
-[6]: 6.PNG
-[7]: 7.PNG
-[8]: 8.PNG
-[9]: 9.PNG
-[10]: 10.PNG
-[14]: 14.PNG
-[15]: 15.PNG
-[16]: 16.PNG
-[17]: 17.PNG
+[0]: imagenes/0.PNG
+[1]: imagenes/1.PNG
+[2]: imagenes/2.PNG
+[3]: imagenes/3.PNG
+[4]: imagenes/4.PNG
+[5]: imagenes/5.PNG
+[6]: imagenes/6.PNG
+[7]: imagenes/7.PNG
+[8]: imagenes/8.PNG
+[9]: imagenes/9.PNG
+[10]: imagenes/10.PNG
+[14]: imagenes/14.PNG
+[15]: imagenes/15.PNG
+[16]: imagenes/16.PNG
+[17]: imagenes/17.PNG
 
 
