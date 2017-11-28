@@ -54,9 +54,9 @@ El primer paso para comenzar con la actividad es la instalación y configuració
 
 **2. Configuración de puertos**
 
-El siguiente paso que se realizó consiste en habilitar los puertos para que se puedan hacer solicitudes a los servicios correctamente. Se habilitó el puerto 8080, ya que va a ser el puerto por e cual se va a configurar el servicio. Para lograrlo se ejecutaron los siguientes comandos:
+El siguiente paso que se realizó consiste en habilitar los puertos para que se puedan hacer solicitudes a los servicios correctamente. Se habilitó el puerto 5000, ya que va a ser el puerto por e cual se va a configurar el servicio. Para lograrlo se ejecutaron los siguientes comandos:
 
-    firewall-cmd --zone=public --add-port=8080/tcp --permanent
+    firewall-cmd --zone=public --add-port=5000/tcp --permanent
     firewall-cmd --reload
 
 **3. Instalación de dependencias**
